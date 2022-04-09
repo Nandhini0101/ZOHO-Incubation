@@ -1,0 +1,24 @@
+Section A- Q7
+
+#include<stdio.h>
+int main()
+{
+    char str[25],tempstr[25];
+        printf("Enter the string\n");
+        scanf("%s",str);
+        for(int i=0;str[i];i++)
+        {
+            for(int j=i++;str[j];j++)
+            {
+                if(str[i]==str[j])
+                {
+                    for(int k=j;str[k];k++)
+                    str[k]=str[k+1];
+                    j=j-1;
+                    str[k]=str[i]+str[j];
+                    tempstr=str[k];
+                    printf("The distinct words are: %d",tempstr);
+                }
+            }
+        }
+}
