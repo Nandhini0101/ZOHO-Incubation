@@ -1,0 +1,23 @@
+Section A-Q2
+
+#include<stdio.h>
+int main()
+{
+    int n;
+        printf("Enter the number");
+        scanf("%d",&n);
+        for(int rowno=1;(rowno<=n);rowno++)
+        {
+            printf("%d",rowno);
+            for(int space=1;space<=(n-rowno);space++)
+            {
+                printf("  ");
+            }
+            for(int num=1;num<=rowno;num++)
+            {
+                printf("%d ",n);
+            }
+            printf("\n");
+        }
+    
+}
